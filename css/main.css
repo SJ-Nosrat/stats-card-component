@@ -25,7 +25,7 @@ body {
     font-size: 0.9375em;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    /* min-height: 100vh; */
+    min-height: 100vh;
     width: 100%;
     background-color: var(--main-bg-color);
     display: flex;
@@ -39,7 +39,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 5rem 1.5rem;
+    margin: 5.5rem 1.5rem;
     background-color: var(--card-bg-color);
     border-radius: 1rem;
 }
@@ -63,7 +63,7 @@ h1 > span {
 p {
     line-height: 1.5625rem;
     color: var(--main-p-color);
-    opacity: 50%;
+    opacity: 75%;
     margin: 0 2rem 2.4375rem;
 }
 
@@ -125,4 +125,70 @@ img {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 475px) {
+    .flex-container{
+        max-width: 540px;
+    }
+    .mobile-img {
+        display: none;
+    }
+
+    .desktop-img {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .flex-container {
+        max-width: none;
+    }
+
+    figure {
+        order: 2;
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    section {
+        order: 1;
+    }
+
+    h1 {
+        max-width: 25.175rem;
+        text-align: left;
+        font-size: 2rem;
+        line-height: 44px;
+        /* margin: 71px 95px 25px 72px; */
+    }
+
+    p {
+        max-width: 23.375rem;
+        text-align: left;
+        margin-bottom: 73px;
+    }
+
+    ul {
+        text-align: left;
+    }
+
+    li {
+        display: inline-block;
+        text-align: left;
+    }
+
+    li:nth-child(1),
+    li:nth-child(2) {
+        margin-right: 3.75rem;
+    }
+
+    li:nth-child(3) {
+        margin-right: 9.1875rem;
+    }
+
+    h1,
+    p,
+    ul {
+        margin-left: 71px;
+    }
 }
