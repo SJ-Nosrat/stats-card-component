@@ -27,6 +27,7 @@ body {
     font-weight: 400;
     min-height: 100vh;
     width: 100%;
+    min-width: 23.4375rem;
     background-color: var(--main-bg-color);
     display: flex;
     flex-direction: column;
@@ -116,7 +117,7 @@ img {
 /* FOOTER STYLES */
 
 .attribution {
-    font-size: 11px;
+    font-size: 0.6875rem;
     text-align: center;
     color: var(--heading-stats-color);
     margin-top: calc(5% - 14px);
@@ -129,7 +130,7 @@ img {
 
 @media (min-width: 475px) {
     .flex-container{
-        max-width: 540px;
+        max-width: 33.75rem;
     }
     .mobile-img {
         display: none;
@@ -143,6 +144,7 @@ img {
 @media (min-width: 1220px) {
     .flex-container {
         max-width: none;
+        margin: 0;
     }
 
     figure {
@@ -158,14 +160,13 @@ img {
         max-width: 25.175rem;
         text-align: left;
         font-size: 2rem;
-        line-height: 44px;
-        /* margin: 71px 95px 25px 72px; */
+        line-height: 2.75rem;
     }
 
     p {
         max-width: 23.375rem;
         text-align: left;
-        margin-bottom: 73px;
+        margin-bottom: 4.5625rem;
     }
 
     ul {
@@ -194,6 +195,6 @@ img {
     h1,
     p,
     ul {
-        margin-left: 71px;
+        margin-left: 4.375rem;
     }
 }

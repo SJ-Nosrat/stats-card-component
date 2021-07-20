@@ -57,7 +57,7 @@ body {
 
 ### Continued development
 
-Refining the solution after testing the webpage on different web browsers.
+Refining the solution after testing the webpage on different web browsers. Also refactoring the **css** code.
 
 ### Useful resources
 
